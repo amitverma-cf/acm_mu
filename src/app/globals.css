@@ -3,19 +3,95 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --main: #88aaee;
+  --overlay: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ); /* background color overlay for alert dialogs, modals, etc. */
+
+  --bg: #dfe5f2;
+  --bw: #fff; /* white and secondary black e.g. utility class variant would be: bg-[#fff] dark:bg-[#212121] */
+  --blank: #000; /* blank black and white */
+  --border: #000;
+  --text: #000;
+  --mtext: #000; /* text that is placed on background with main color e.g. text color of default button */
+  --ring: #000;
+  --ring-offset: #fff;
+
+  --border-radius: 0px;
+  --box-shadow-x: 4px;
+  --box-shadow-y: 4px;
+  --reverse-box-shadow-x: -4px;
+  --reverse-box-shadow-y: -4px;
+  --base-font-weight: 500;
+  --heading-font-weight: 700;
+
+  --shadow: var(--box-shadow-x) var(--box-shadow-y) 0px 0px var(--border);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.dark {
+  --bg: #272933;
+  --bw: #212121;
+  --blank: #fff;
+  --border: #000;
+  --text: #e6e6e6;
+  --mtext: #000;
+  --ring: #fff;
+  --ring-offset: #000;
+
+  --shadow: var(--box-shadow-x) var(--box-shadow-y) 0px 0px var(--border);
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+
+  p, span, li, a, div {
+    @apply font-body;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.parent {
+  position: relative;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 96px;
+  z-index: 10;
+}
+
+.hidden {
+  display: none;
+}
+
+.text-shadow-sm {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.text-shadow-md {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text-shadow-lg {
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.text-shadow-xl {
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.text-shadow-glow {
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 16px rgba(255, 255, 255, 0.6);
+}
+
+.ellipsis-2-lines {
+  display: -webkit-box; /* Enables flexbox for webkit browsers */
+  -webkit-line-clamp: 2; /* Specifies the number of lines to display */
+  -webkit-box-orient: vertical; /* Specifies the box orientation */
+  overflow: hidden; /* Ensures content is clipped */
+  text-overflow: ellipsis; /* Adds ellipsis to clipped text */
 }

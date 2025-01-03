@@ -1,36 +1,149 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Development Goals for ACM Chapter Website
 
-## Getting Started
+## Website Structure
 
-First, run the development server:
+### Landing Page
+- **Header**:
+  - Links: About, Team, Events, Leaderboard
+  - Button: Join Membership (/)
+- **Hero Section**:
+  - Introduction to ACM Chapter
+- **Marquee**:
+  - Scrolling news updates or announcements
+- **Showcase**:
+  - Sections for:
+    - Workshops
+    - Competitions & Hackathons
+    - Guest Lectures
+    - Collaborations & Opportunities
+- **Upcoming Events**: Display cards for future events.
+- **Testimonials**: Member and participant reviews.
+- **Join Membership**: List benefits and provide a form link.
+- **FAQ**: Answer common queries.
+- **Footer**:
+  - Social Links
+  - Quick Links
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### About Us Page
+- **Header**:
+  - Links: About, Team, Events, Leaderboard
+  - Buttons: Visit ACM (/), Join Membership (/)
+- **About Us Section**:
+  - Mission, Vision, Values, and History of the ACM Chapter.
+- **How to Get Involved**:
+  - Join Membership details
+  - Benefits of joining
+  - Form link
+- **Footer**: Standard footer with social links and quick links.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Meet the Team Page
+- **Header**:
+  - Links: About, Team, Events, Leaderboard
+  - Buttons: Visit ACM (/), Join Membership (/)
+- **Team Section**:
+  - Categories: Mentors, Board, Volunteers
+  - Individual cards with name, position, and social links (LinkedIn, Twitter, GitHub).
+- **Footer**: Standard footer with social links and quick links.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Events Page
+- **Header**:
+  - Links: About, Team, Events, Leaderboard
+  - Buttons: Visit ACM (/), Join Membership (/)
+- **Upcoming Events**: List and cards for future events.
+- **Past Events**: Archive of past events.
+- **Footer**: Standard footer with social links and quick links.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Leaderboard Page
+- **Header**:
+  - Links: About, Team, Events, Leaderboard
+- **Ranks**: Display leaderboard rankings.
+- **Footer**: Standard footer with social links and quick links.
 
-## Learn More
+## Editing Guide for GitHub Repository
 
-To learn more about Next.js, take a look at the following resources:
+### Project Overview
+This is a Next.js project designed for the ACM Chapter website. The site structure supports scalability and dynamic updates.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Getting Started
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+#### Local Development
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   ```
 
-## Deploy on Vercel
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Run the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
+
+### Editing the Content
+
+- To edit or add data, navigate to the respective Data file in the `data` directory.
+
+#### Landing Page
+- File: `app/page.tsx`
+- Key sections:
+  - Hero Section: Update text and images.
+  - Marquee: Add news items.
+  - Showcase: Edit workshops, hackathons, guest lectures, etc.
+  - Upcoming Events: Add event details.
+  - Recent Achievements: Update milestone content.
+  - Testimonials: Add or modify testimonials.
+
+#### About Us Page
+- File: `app/about/page.tsx`
+- Key sections:
+  - Mission, Vision, Values: Update text content.
+  - How to Get Involved: Edit membership benefits and form link.
+
+#### Meet the Team Page
+- File: `app/team/page.tsx`
+- Key sections:
+  - Team Categories: Update mentors, board, and volunteers.
+  - Social Links: Ensure links to LinkedIn, Twitter, and GitHub are accurate.
+
+#### Events Page
+- File: `app/events/page.tsx`
+- Key sections:
+  - Upcoming Events: Add new event details. [Todo]
+  - Past Events: Archive completed events. [Todo]
+
+#### Leaderboard Page
+- File: `app/leaderboard/page.tsx`
+- Key sections:
+  - Rankings: Update user rankings dynamically. [Todo]
+
+### Deployment
+The website is deployed using Vercel.
+1. Push changes to the `main` branch:
+   ```bash
+   git add .
+   git commit -m "Update content"
+   git push origin main
+   ```
+2. Changes will automatically trigger a deployment on [Vercel](https://vercel.com).
+
+### Resources
+- **Next.js Documentation**: Learn more about [Next.js](https://nextjs.org/docs).
+- **Tailwind CSS Documentation**: Reference for [Tailwind CSS](https://tailwindcss.com/docs).
+- **Vercel Deployment Guide**: Details on [deploying with Vercel](https://vercel.com/docs).
+
+### Contact
+For issues or feature requests, contact the team at `acm@university.edu` or open an issue on GitHub.
+
