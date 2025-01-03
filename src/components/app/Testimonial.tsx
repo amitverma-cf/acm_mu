@@ -1,5 +1,6 @@
 import { testimonialsData } from '@/data/testimonialsData'
 import React from 'react'
+import Image from 'next/image';
 
 const Testimonial = () => {
     return (
@@ -22,11 +23,14 @@ const Testimonial = () => {
                                         key={index}
                                     >
                                         <div className="flex items-center gap-5">
-                                            <img
-                                                className="h-12 w-12 rounded-base border-2 border-border"
-                                                src={`${pfp}`}
-                                                alt="pfp"
-                                            />
+                                            <div className='relative w-12 h-12 rounded-base overflow-hidden'>
+                                                <Image
+                                                    className="h-12 w-12 rounded-base border-2 border-border object-contain"
+                                                    src={`${pfp}`}
+                                                    alt="pfp"
+                                                    fill
+                                                />
+                                            </div>
 
                                             <div>
                                                 <h4 className="text-lg font-heading">{fullName}</h4>
