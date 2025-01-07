@@ -5,9 +5,9 @@ import Image from 'next/image';
 const Testimonial = () => {
     return (
         <>
-            <section className="inset-0 flex w-full px-5 flex-col items-center justify-center bg-white dark:bg-secondaryBlack bg-[linear-gradient(to_right,#80808033_1px,transparent_1px),linear-gradient(to_bottom,#80808033_1px,transparent_1px)] bg-[size:70px_70px] font-base">
-                <div className="mx-auto w-container max-w-full py-20 m500:py-14 lg:py-[100px]">
-                    <h2 className="mb-10 text-center text-4xl font-heading m1300:text-3xl m700:text-2xl m500:text-xl lg:mb-20">
+            <section className="inset-0 flex w-full px-5 flex-col items-center justify-center bg-white bg-[linear-gradient(to_right,#80808033_1px,transparent_1px),linear-gradient(to_bottom,#80808033_1px,transparent_1px)] bg-[size:70px_70px] font-base">
+                <div className="mx-auto w-container max-w-full py-20 lg:py-[100px]">
+                    <h2 className="mb-10 text-center text-4xl font-heading lg:mb-20">
                         Loved by the community
                     </h2>
                     <div className="md:grid-cols-3 md:gap-4 grid grid-cols-1 gap-0 lg:gap-8">
@@ -19,7 +19,7 @@ const Testimonial = () => {
                             <div className="group flex flex-col justify-center" key={index}>
                                 {card.map(({ jobTitle, pfp, fullName, review }, index) => (
                                     <div
-                                        className="m1000:min-h-20 m1000:w-2/3 m1000:mx-auto m500:w-full mb-4 min-h-48 w-full rounded-base border-2 border-border dark:border-darkBorder bg-bg dark:bg-darkBg p-5 shadow-light dark:shadow-dark lg:mb-8"
+                                        className="mb-4 min-h-48 w-full rounded-base border-2 border-border bg-bg p-5 shadow-light lg:mb-8"
                                         key={index}
                                     >
                                         <div className="flex items-center gap-5">

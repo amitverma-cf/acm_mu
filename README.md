@@ -5,7 +5,7 @@
 ### Landing Page
 - **Header**:
   - Links: About, Team, Events, Leaderboard
-  - Button: Join Membership (/)
+  - Button: Visit(/), Join Us (/)
 - **Hero Section**:
   - Introduction to ACM Chapter
 - **Marquee**:
