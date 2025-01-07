@@ -8,7 +8,7 @@ import { footerData } from '@/data/footerData';
 const Footer = () => {
     return (
         <>
-            <footer className="bg-blue-100">
+            <footer className="bg-blue-100 overflow-hidden">
                 <div className="">
 
                     <div
@@ -48,7 +48,7 @@ const Footer = () => {
                                             formAction={social.link}
                                         >
                                             <span className="sr-only"> {social.title} </span>
-                                            <svg className="size-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                            <svg className="size-10" fill="currentColor" viewBox={social.svg_size} aria-hidden="true">
                                                 <path
                                                     fillRule="evenodd"
                                                     d={social.svg_path}
@@ -66,7 +66,7 @@ const Footer = () => {
                                 </div>
                             </div>
 
-                            <div className="text-xl m1100:text-base">
+                            <div className="text-xl">
                                 <div className='text-left'>
                                     <strong className='font-heading text-3xl font-thin'>{footerData.quicklinks_heading}</strong>
 
@@ -85,12 +85,12 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="block text-clip opacity-50 lg:h-[200px] md:h-[150px] h-[100px] text-center overflow-y-clip leading-[0.7] -z-[999]">
-                        <span className="lg:text-[500px] md:text-[400px] text-[200px] font-heading text-center text-white"> {footerData.acm} </span>
+                    <div className="block text-clip opacity-50 lg:h-[200px] md:h-[150px] h-[70px] text-center overflow-y-clip leading-[0.7] -z-[999]">
+                        <span className="lg:text-[440px] md:text-[330px] text-[140px] font-heading text-center text-white"> {footerData.acm} </span>
                     </div>
 
                 </div>
-            </footer >
+            </footer>
         </>
     )
 }

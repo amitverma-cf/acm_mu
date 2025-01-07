@@ -6,7 +6,7 @@ const Membership = () => {
     return (
         <section className="bg-purple-300 border-t-4 border-black">
             <h1 className='text-4xl text-center md:text-left md:pl-40 pt-20 pb-8'>Apply for Membership</h1>
-            <div className="flex flex-col lg:flex-row justify-center items-start gap-8 p-6 pb-20">
+            <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start gap-8 p-6 pb-20">
                 <div className="rounded-lg border-2 border-b-4 border-r-4 border-neutral-900 bg-white p-6 py-14 max-w-md flex-1">
                     <div className="flex items-center justify-between">
                         <div className="text-base font-thin">
@@ -39,7 +39,7 @@ const Membership = () => {
                     </p>
 
                     <Button className="mt-6 w-full h-14 text-2xl bg-white text-neutral-900 font-bold border-2 border-neutral-900 rounded-lg shadow-lg hover:bg-neutral-100">
-                        Join Membership
+                        Join Us
                     </Button>
                 </div>
             </div>

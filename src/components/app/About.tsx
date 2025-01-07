@@ -4,7 +4,7 @@ import React from 'react'
 const About = () => {
     return (
         <>
-            <div className='p-24 border-t-4 border-black text-xl'>
+            <div className='p-8 md:p-16 lg:p-24 border-t-4 border-black lg:text-xl md:text-lg text-base'>
                 <p>
                     The ACM Chapter at Mahindra University serves as a vibrant hub for technology enthusiasts, aspiring innovators, and passionate learners. Our chapter is dedicated to fostering a culture of innovation, collaboration, and technical excellence among students. As a student-led organization affiliated with the prestigious Association for Computing Machinery (ACM), the chapter aims to bridge the gap between academic knowledge and real-world application. We organize an array of events, workshops, hackathons, and guest lectures featuring industry leaders, all designed to keep our members at the forefront of technological advancements. From mastering cutting-edge fields like artificial intelligence, machine learning, and cybersecurity to exploring foundational concepts in programming and algorithms, our chapter provides a platform for students to enhance their technical skills and develop a growth-oriented mindset.
                 </p>
