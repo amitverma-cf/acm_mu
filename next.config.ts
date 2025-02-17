@@ -6,9 +6,18 @@ const nextConfig: NextConfig = {
             {
                 protocol: 'https',
                 hostname: '**.unsplash.com',
-            },{
+            },
+            {
                 protocol: 'https',
                 hostname: '**.neobrutalism.dev',
+            },
+            {
+                protocol: 'https',
+                hostname: '**.github.com',
+            },
+            {
+                protocol: 'https',
+                hostname: '**.githubusercontent.com',
             },
         ],
     },

@@ -1,9 +1,9 @@
-import Showcase from "@/components/app/Showcase";
+import Leaderboard from "@/components/app/Leaderboard";
 
 export default function LeaderboardPage() {
     return (
         <>
-            <Showcase />
+            <Leaderboard />
         </>
     );
 }

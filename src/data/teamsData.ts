@@ -1,4 +1,4 @@
-import { TeamData } from "./interfaces";
+import { TeamData } from "../lib/interfaces";
 
 export const teamsData: TeamData = {
     mentors: [
