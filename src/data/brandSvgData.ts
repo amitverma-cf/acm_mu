@@ -1,4 +1,4 @@
-import { SVGBrand } from "./interfaces";
+import { SVGBrand } from "../lib/interfaces";
 
 export const brandSvgData: SVGBrand[] = [
     {

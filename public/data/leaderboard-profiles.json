@@ -1,0 +1,37 @@
+{
+  "lastUpdated": "2025-02-17T17:59:47.607Z",
+  "users": [
+    {
+      "id": "1",
+      "name": "Amit Verma",
+      "avatar": "https://avatars.githubusercontent.com/u/35371348?v=4",
+      "username": {
+        "leetcode": "user0894Cy",
+        "codeforces": "amve",
+        "github": "amitverma-cf"
+      },
+      "stats": {
+        "github": {
+          "contributions": 0,
+          "repositories": 41,
+          "stars": 6,
+          "followers": 13
+        },
+        "leetcode": {
+          "solved": 12,
+          "ranking": 3797248,
+          "rating": 0,
+          "contestRating": 0
+        },
+        "codeforces": {
+          "rating": 0,
+          "maxRating": 0,
+          "rank": "unrated",
+          "problemsSolved": 0
+        }
+      },
+      "totalScore": 2865,
+      "rank": 1
+    }
+  ]
+}

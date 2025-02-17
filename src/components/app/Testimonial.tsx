@@ -8,13 +8,13 @@ const Testimonial = () => {
             <section className="inset-0 flex w-full px-5 flex-col items-center justify-center bg-white bg-[linear-gradient(to_right,#80808033_1px,transparent_1px),linear-gradient(to_bottom,#80808033_1px,transparent_1px)] bg-[size:70px_70px] font-base">
                 <div className="mx-auto w-container max-w-full py-20 lg:py-[100px]">
                     <h2 className="mb-10 text-center text-4xl font-heading lg:mb-20">
-                        Loved by the community
+                        {testimonialsData.title}
                     </h2>
                     <div className="md:grid-cols-3 md:gap-4 grid grid-cols-1 gap-0 lg:gap-8">
                         {[
-                            [testimonialsData[0], testimonialsData[1]],
-                            [testimonialsData[2], testimonialsData[3], testimonialsData[4]],
-                            [testimonialsData[5], testimonialsData[6]],
+                            [testimonialsData.content[0], testimonialsData.content[1]],
+                            [testimonialsData.content[2], testimonialsData.content[3], testimonialsData.content[4]],
+                            [testimonialsData.content[5], testimonialsData.content[6]],
                         ].map((card, index) => (
                             <div className="group flex flex-col justify-center" key={index}>
                                 {card.map(({ jobTitle, pfp, fullName, review }, index) => (

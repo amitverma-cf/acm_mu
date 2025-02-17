@@ -54,6 +54,31 @@
 - **Footer**: Standard footer with social links and quick links.
 
 ### Leaderboard Page
+
+- **API**:
+  - Fetch Users from API.
+  ```cmd
+  curl https://acm-mu.vercel.app/api/profiles
+  ```
+  - Add new users to the API.
+  ```cmd
+  curl -X POST https://acm-mu.vercel.app/api/profiles \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "John Doe",
+    "avatar": "https://github.com/johndoe.png",
+    "username": {
+        "github": "johndoe",
+        "leetcode": "john_leetcode",
+        "codeforces": "john_cf"
+    }
+  }'
+  ```
+  - Delete users from the API.
+  ```cmd
+  curl -X DELETE https://acm-mu.vercel.app/api/profiles?id=[profile_id_here]
+  ```
+
 - **Header**:
   - Links: About, Team, Events, Leaderboard
 - **Ranks**: Display leaderboard rankings.
